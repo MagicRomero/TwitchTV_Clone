@@ -1,14 +1,17 @@
+import MainLayout from "Layouts/MainLayout";
 import Head from "next/head";
-
-export default function Home() {
+function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Twitch</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>next js !</main>
+      <h3>A VER SI ES VERDA</h3>
     </div>
   );
 }
+
+Home.getLayout = (page) => <MainLayout {...page.props}>{page}</MainLayout>;
+
+export default Home;

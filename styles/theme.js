@@ -73,8 +73,15 @@ body * {
 }
 
 a {
-  color: inherit;
+  color: ${(props) => props.theme.primaryLinkColor};
   text-decoration: none;
+  font-size: 0.9rem;
+  font-weight:600;
+
+  &:hover,
+  &:active {
+    color: ${(props) => props.theme.primaryBrandColor};
+  }
 }
 
 ul {
@@ -160,9 +167,13 @@ export const theme = {
   default: {
     baseFontSize: "16px",
     primaryBackgroundColor: "#F7F7F8",
-    primaryTextColor: "#A4A4A8",
+    primaryTextColor: "#242428",
     primaryFont:
       "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
     secondaryFont: "Poppins, -apple-system, BlinkMacSystemFont, sans-serif",
+    primaryLinkColor: "#0e0e10",
+    primaryBrandColor: "#8542EA",
+    secondaryBrandColor: "#772CE8",
+    navbarHeight: "3.2rem",
   },
 };

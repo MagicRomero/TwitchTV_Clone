@@ -31,19 +31,19 @@ function MyApp({ Component, pageProps }) {
         />
         <link
           rel="preload"
-          href="/fonts/Lora/static/Lora-Regular.ttf"
+          href="/fonts/Inter/static/Inter-Regular.ttf"
           as="font"
           crossOrigin=""
         />
         <link
           rel="preload"
-          href="/fonts/Lora/static/Lora-Medium.ttf"
+          href="/fonts/Inter/static/Inter-Medium.ttf"
           as="font"
           crossOrigin=""
         />
         <link
           rel="preload"
-          href="/fonts/Lora/static/Lora-Semibold.ttf"
+          href="/fonts/Inter/static/Inter-Semibold.ttf"
           as="font"
           crossOrigin=""
         />
